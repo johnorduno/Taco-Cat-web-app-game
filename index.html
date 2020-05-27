@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>TACOCAT</title>
+
+
+    
+
+</head>
+<body>
+    
+    <div class="gameContainer">
+        <div id="scoreContainer">
+            <div id="scoreBox"></div>
+            <div id="statBox"></div>
+        </div>
+        <canvas id="gameScreen" width=800 height=600></canvas>
+    </div>
+
+
+    <!-- Sprites -->
+    <img  class="gameImage" id="cat1" src="spr_cat1.png">
+    <img class="gameImage" id="cat2" src="spr_cat2.png">
+    <img class="gameImage" id="cat3" src="spr_cat3.png">
+    <img class="gameImage" id="cat4" src="spr_cat4.png">
+    <img class="gameImage" id="taco" src="spr_taco.png">
+    <img class="gameImage" id="dryFood" src="spr_dryfood.png">
+    <img class="gameImageStar" id="star" src="spr_star.png">
+
+
+    <!-- Audio -->
+    <audio id="introAudio" preload="auto" loop>
+        <source src="08-Rm-ElecmanStage.mp3">
+    </audio>
+    <audio id="deathAudio" preload="auto">
+        <source src="08 - MegamanDefeat.wav">
+    </audio>
+    <audio id="crunchAudio" preload="auto">
+        <source src="crunch.wav">
+    </audio>
+    <audio id="yuckAudio" preload="auto">
+        <source src="yuck.wav">
+    </audio>
+    <!-- <iframe src="mm1.05_stage_select.mp3" allow="autoplay" style="display:none" id="introAudio">
+    </iframe>  -->
+    <script src="game.js"></script>
+
+</body>
+</html>
