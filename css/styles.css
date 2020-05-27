@@ -1,11 +1,9 @@
-@font-face { font-family: LCD; src: url('LCD2B.TTF'); } 
+@font-face { font-family: LCD; src: url('../fonts/LCD2B.TTF'); } 
 
 *{
     padding: 0;
     margin:0;
 }
-
-
 
 #gameScreen {
     border: 5px solid black;
@@ -16,11 +14,6 @@
 
 .gameImage {
     display: none;
-    z-index: 1;
-}
-
-.gameImageStar {
-    display:none;
 }
 
 .catTile {
@@ -35,7 +28,7 @@
     border: 5px solid black;
     width: 1000px;
     text-align: center;
-    background-image: url("spacebg.jpg");
+    background-image: url("../images/spacebg.jpg");
     margin:auto;
 }
 
